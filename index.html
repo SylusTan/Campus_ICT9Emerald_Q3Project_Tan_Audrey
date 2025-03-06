@@ -12,7 +12,7 @@
 <style>
 
 
-  body {
+    body {
             background-image: url('https://images.wallpaperscraft.com/image/single/railway_train_station_134586_3840x2160.jpg');
             background-repeat: no-repeat;
             background-size: cover;
@@ -20,16 +20,19 @@
             font-family: Gill Sans;
         }
 
-	     .navbar {
+
+    .navbar {
             margin-bottom: 20px;
             background-color: #0b0b04;
         }
 
-        .navbar-brand img {
+
+    .navbar-brand img {
             height: 40px;
         }
 
-        h2, h4 {
+
+    h2, h4 {
             text-align: center;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
@@ -41,7 +44,8 @@
 
         }
 
-    	.fare-guide {
+
+    .fare-guide {
         font-size: 28px; 
         font-weight: bold;
         color: ghostwhite;
@@ -52,6 +56,7 @@
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     }
 
+  
     .custom-alert {
     width: 100;  
     background: rgba(0, 0, 0, 0.5);
@@ -64,14 +69,19 @@
                 2px -2px 4px rgba(0, 0, 0, 0.5),
                 -2px 2px 4px rgba(0, 0, 0, 0.5); 
 
-}
+    }
 
-html, body {
+
+
+    html, body {
     overflow-x: hidden;
     width: 100%;
-}
+    
+    }
 
-  p {
+
+
+    p {
             text-align: center;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
@@ -79,34 +89,42 @@ html, body {
                 2px -2px 4px rgba(0, 0, 0, 0.5),
                 -2px 2px 4px rgba(0, 0, 0, 0.5); 
 
-        }
+    }
 
-           .image-frame {
+   .image-frame {
             margin-top: 80px;
             width: 90%;
-            max-width: 900px;
+            max-width: 400px;
             padding: 10px;
             border: 3px solid #fff;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.5);
             margin-left: auto;
             margin-right: auto;
-        }
 
-        .image-frame img {
+    }
+
+
+    .image-frame img {
             width: 90%;
             height: auto;
             border-radius: 3px;
-       }
 
-       .btn {
+    }
+
+
+
+    .btn {
     background-color: #8B0000; 
     border-color: black;
     color: white; 
-}
 
 
-    </style>
+    }
+
+
+</style>
+
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
@@ -119,13 +137,13 @@ html, body {
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="draft.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="schedule.html">Train Schedule</a>
+                        <a class="nav-link" href="page2.html">Train Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="help.html">Help</a>
+                        <a class="nav-link" href="page3.html">Help</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -159,23 +177,56 @@ html, body {
             </div>
 
             <div class="col-md-4">
+
+                 <h4 class="mt-3">Passenger Type:</h4>
+           <select class="form-select" id="passengerType">
+           <option value="Regular">Regular</option>
+           <option value="PWD">PWD (20% Discount)</option>
+           <option value="Student">Student (20% Discount)</option>
+           </select>
+
+           <br><br>
+
+
                 <h4>Leaving From:</h4>
                 <select class="form-select" id="fromStation">
+                     <option value="Quezon Ave.">Quezon Ave.</option>
                     <option value="North Ave.">North Ave.</option>
-                    <option value="Quezon Ave.">Quezon Ave.</option>
-                    <option value="Taft">Taft</option>
+                    <option value="North Ave.">Quezon Ave.</option>
+                    <option value="North Ave.">GMA Kamuning</option>
+                    <option value="North Ave.">Araneta Cubao</option>
+                    <option value="North Ave.">Santolan Annapolis</option>
+                    <option value="North Ave.">Ortigas</option>
+                    <option value="North Ave.">Shaw Blvd.</option>
+                    <option value="North Ave.">Boni Ave.</option>
+                    <option value="North Ave.">Guadalupe</option>
+                    <option value="North Ave.">Buendia</option>
+                    <option value="North Ave.">Ayala</option>
+                    <option value="North Ave.">Magallanes</option>
+                    <option value="North Ave.">Taft Avenue</option>
                 </select>
 
                 <br>
 
                 <h4 class="mt-3">Going To:</h4>
                 <select class="form-select" id="toStation">
-                    <option value="Taft">Taft</option>
-                    <option value="Quezon Ave.">Quezon Ave.</option>
+                     <option value="Quezon Ave.">Quezon Ave.</option>
                     <option value="North Ave.">North Ave.</option>
+                    <option value="North Ave.">Quezon Ave.</option>
+                    <option value="North Ave.">GMA Kamuning</option>
+                    <option value="North Ave.">Araneta Cubao</option>
+                    <option value="North Ave.">Santolan Annapolis</option>
+                    <option value="North Ave.">Ortigas</option>
+                    <option value="North Ave.">Shaw Blvd.</option>
+                    <option value="North Ave.">Boni Ave.</option>
+                    <option value="North Ave.">Guadalupe</option>
+                    <option value="North Ave.">Buendia</option>
+                    <option value="North Ave.">Ayala</option>
+                    <option value="North Ave.">Magallanes</option>
+                    <option value="North Ave.">Taft Avenue</option>
                 </select>
 
-                <center><button class="btn btn-primary mt-3" onclick="calculateFare()">Enter</button></center>
+                <center><button class="btn btn-success mt-3" onclick="calculateFare()">Enter</button></center>
             </div>
 
 
@@ -195,19 +246,67 @@ html, body {
 function calculateFare() {
     let from = document.getElementById("fromStation").value;
     let to = document.getElementById("toStation").value;
+    let passengerType = document.getElementById("passengerType").value;
     let fare = 0;
 
-    if ((from === "North Ave." && to === "Taft") || (from === "Taft" && to === "North Ave.")) {
-        fare = 28.00;
-    } else if ((from === "North Ave." && to === "Quezon Ave.") || (from === "Quezon Ave." && to === "North Ave.")) {
-        fare = 13.00;
+    // Define fare based on station pairs
+    const fareRates = {
+        "North Ave.": {
+            "Taft Avenue": 28.00,
+            "Quezon Ave.": 13.00,
+            "GMA Kamuning": 20.00,
+            "Araneta Cubao": 20.00,
+            "Santolan Annapolis": 20.00,
+            "Ortigas": 20.00,
+            "Shaw Blvd.": 20.00,
+            "Boni Ave.": 20.00,
+            "Guadalupe": 20.00,
+            "Buendia": 20.00,
+            "Ayala": 20.00,
+            "Magallanes": 20.00
+        },
+        "Quezon Ave.": {
+            "North Ave.": 13.00,
+            "Taft Avenue": 28.00,
+            "GMA Kamuning": 20.00,
+            "Araneta Cubao": 20.00,
+            "Santolan Annapolis": 20.00,
+            "Ortigas": 20.00,
+            "Shaw Blvd.": 20.00,
+            "Boni Ave.": 20.00,
+            "Guadalupe": 20.00,
+            "Buendia": 20.00,
+            "Ayala": 20.00,
+            "Magallanes": 20.00
+        },
+        "GMA Kamuning": {
+            "North Ave.": 20.00,
+            "Quezon Ave.": 20.00,
+            "Taft Avenue": 28.00,
+            "Araneta Cubao": 20.00,
+            "Santolan Annapolis": 20.00,
+            "Ortigas": 20.00,
+            "Shaw Blvd.": 20.00,
+            "Boni Ave.": 20.00,
+            "Guadalupe": 20.00,
+            "Buendia": 20.00,
+            "Ayala": 20.00,
+            "Magallanes": 20.00
+        }
+
+    // Get the fare based on the selected "from" and "to" stations
+    if (fareRates[from] && fareRates[from][to]) {
+        fare = fareRates[from][to];
     } else {
-        fare = 20.00;
+        fare = 20.00; // Default fare if no exact match
+    }
+
+    // Apply discount for PWD or Student
+    if (passengerType === "PWD" || passengerType === "Student") {
+        fare *= 0.8; // Apply 20% discount
     }
 
     document.getElementById("ticketPrice").innerHTML = fare.toFixed(2);
-//This button gives you the price of a ticket depending on where you are from and where do you want to go. 
-//This does it via assigning a value called "fromStation" and "toStation" and making the locations be equal and the same type as the values (===). 
 }
 </script>
 
