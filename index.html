@@ -242,7 +242,7 @@
         </div>
     </div>
 
-    <script>
+<script>
 function calculateFare() {
     let from = document.getElementById("fromStation").value;
     let to = document.getElementById("toStation").value;
@@ -266,8 +266,8 @@ function calculateFare() {
             "Magallanes": 20.00
         },
         "Quezon Ave.": {
-            "North Ave.": 13.00,
-            "Taft Avenue": 28.00,
+            "North Ave.": 13.00,  // From Quezon Ave. to North Ave.
+            "Taft Avenue": 28.00,  // From Quezon Ave. to Taft Avenue
             "GMA Kamuning": 20.00,
             "Araneta Cubao": 20.00,
             "Santolan Annapolis": 20.00,
@@ -292,18 +292,21 @@ function calculateFare() {
             "Buendia": 20.00,
             "Ayala": 20.00,
             "Magallanes": 20.00
-        }
+        },
 
-    // Get the fare based on the selected "from" and "to" stations
-    if (fareRates[from] && fareRates[from][to]) {
+    };
+
+    if (from === "Quezon Ave." && to === "Quezon Ave.") {
+        fare = 0;  
+    } else if (fareRates[from] && fareRates[from][to]) {
         fare = fareRates[from][to];
     } else {
-        fare = 20.00; // Default fare if no exact match
+        fare = 20.00; 
     }
 
-    // Apply discount for PWD or Student
+
     if (passengerType === "PWD" || passengerType === "Student") {
-        fare *= 0.8; // Apply 20% discount
+        fare *= 0.8; //20% Discount
     }
 
     document.getElementById("ticketPrice").innerHTML = fare.toFixed(2);
