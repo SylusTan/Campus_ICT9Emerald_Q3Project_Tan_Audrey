@@ -247,7 +247,7 @@ function calculateFare() {
     let from = document.getElementById("fromStation").value;
     let to = document.getElementById("toStation").value;
     let passengerType = document.getElementById("passengerType").value;
-    let fare = 0;
+    let fare = 0; //This is the price when you don't select anything
 
     // Define fare based on station pairs
     const fareRates = {
@@ -266,8 +266,8 @@ function calculateFare() {
             "Magallanes": 20.00
         },
         "Quezon Ave.": {
-            "North Ave.": 13.00,  // From Quezon Ave. to North Ave.
-            "Taft Avenue": 28.00,  // From Quezon Ave. to Taft Avenue
+            "North Ave.": 13.00,  
+            "Taft Avenue": 28.00,  
             "GMA Kamuning": 20.00,
             "Araneta Cubao": 20.00,
             "Santolan Annapolis": 20.00,
@@ -310,6 +310,8 @@ function calculateFare() {
     }
 
     document.getElementById("ticketPrice").innerHTML = fare.toFixed(2);
+	//This button gives you the price of a ticket depending on where you are from and where do you want to go. 
+	//This does it via assigning a value called "fromStation" and "toStation" and making the locations be equal and the same type as the values (===). 
 }
 </script>
 
